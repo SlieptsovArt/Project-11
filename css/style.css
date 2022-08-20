@@ -1,0 +1,1298 @@
+/* Сброс налаштування*/
+*,
+*:before,   /**/
+*:after {
+    box-sizing: border-box;
+}
+/*Прибираємо внутрішні відступи*/
+ul[class],
+ol[class] {
+    padding: 0;
+}
+/*Прибираємо зовнішні відступи*/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+/*Сброс налаштування фото*/
+ /*img {
+    max-width: 100%;
+    display: block;
+}
+Якщо я цей код залишаю то іконки ті що .icon_messengers розміщаються вертикально а не горизонтально
+Як зробити, щоб і залишити цей код і вони після розміщались горизонтально?*/
+
+/*Загальні налаштування*/
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #374754;
+}
+
+span {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #374754;
+
+    text-align: center;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    border: 0;
+}
+
+/*  Container*/
+.container {
+    width: 100%;
+    max-width: 1304px;
+    margin: 0 auto;
+}
+
+/* First block intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% ;
+    height: 100vh ;
+    background-image: url("icon/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro_inner {
+    width: 100%;
+    max-width: 766px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro_title {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.intro_undertitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/*bottom INTRRO*/
+.bottom_intro {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px 62px;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+
+    text-decoration: none;
+    margin-top: 60px;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.bottom_intro:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* CSS for Header */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/*Flex container header in*/
+.header_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* navigation */
+nav a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 67.5px 43px;
+    margin-left: 0;
+    color: #fff;
+    transition: color 0.2s linear; /* Для більш плавного переходу кольору коли наводиш курсор*/
+    text-decoration: none;
+}
+.nav_link:hover {
+    color: #fce38a;
+}
+
+/*Logotype*/
+.figma_land {
+    display: inline-block;
+    vertical-align: top;
+    margin: 53px 43px; /*53 (1)*/
+    margin-left: 0;
+}
+
+/* Header icons*/
+.header_icon {
+    display: inline-block;
+}
+.icon_messengers {
+    margin-right: 32px;
+}
+
+/*SECTION FEATURES*/
+
+.section_features {
+    margin-top: 115px;
+    margin-bottom: 0;
+}
+
+/*Section-header*/
+.section_header {
+    width: 100%;
+    max-width: 521px;
+    margin: 0 auto 97px;
+}
+.section_title {
+    margin: 0 auto;
+}
+.section_undertitle {
+    margin: 27px auto 0;
+}
+
+/*features info (in section1)*/
+.features_info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1300px; /* Я виміряв для цього контейнера ширину 845рх але коли її виставляю то колони в мене не центровані, не зміг вирішити цю проблему
+   по іншому, як збільшити ширину (але я вважаю, що це не правильно)*/
+
+}
+.info_col {
+    display: inline-block;
+    width: 100%;
+    max-width: 227px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+
+/*INFO img, title and text*/
+.info_img {
+    margin: 0 auto;
+}
+.info_title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+
+    margin: 28px 0 20px;
+}
+.info_text {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #374754;
+
+    margin: 0 auto;
+}
+
+/*features video */
+.features_video {
+    margin-top: 66px;
+}
+.video_size {
+    position: relative;
+
+    width:100%;
+    max-width: 1320px;
+    text-align: center;
+}
+.video_screen {
+    filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+    border-radius: 44.8123px;
+    margin: 0 auto;
+    width: 100%;
+}
+.bottom_play {  /*Не знаю як зробит, щоб фото (play) не сгибало властивістью border-radius, щоб плей
+був рівним*/
+    position: absolute;
+
+    width: 187.4px;
+    height: 187.4px;
+
+    border: 2px solid #2091F9;
+    border-radius: 50%;
+    background-color: #2091F9;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    padding: 71.3px 69.09px 69.26px 79.27px;
+}
+
+
+/*SECTION WAY*/
+
+.section_way {
+    margin-top: 275px;
+    margin-bottom: 442px;
+}
+.way_size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1225px;
+}
+/*Way text*/
+.section_way_text {
+    text-align: left;
+}
+.section_way_text h2 {
+    text-align: left;
+}
+.section_way_text h3 {
+    margin-top: 27px;
+    margin-bottom: 70px;
+
+    text-align: left;
+}
+.bottom_way {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px 59.5px;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.bottom_way:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/*SECTION PROTOTYPE */
+
+.section_prototype {
+    margin-bottom: 182px;
+}
+.prototype_size {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+
+
+    max-width: 1272px;
+    width: 100%;
+
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/*Prototype picture*/
+.prototype_picture {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 35px;
+}
+/*prototype-text*/
+.prototype_text {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 35px;
+}
+.prototype_text h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
+
+    margin-bottom: 17px;
+}
+.prototype_text h2 {
+    margin-bottom: 35px;
+    text-align: left;
+}
+.label_sub {
+    font-family: 'Fira Sans', sans-serif;
+    /*font-weight: 700; ??? */
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
+}
+.prototype_text label {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .2px;
+    color: #374754;
+}
+.prototype_text input {
+    width: 273px;
+    height: 54px;
+
+    padding: 19px 39px;
+    margin-right: 12px;
+    margin-top: 36px;
+
+    border: 1px solid #E8E8E8;
+    border-radius:  39px;
+    background-color: #F4F4F4;
+
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .1px;
+    color: #18171D;
+}
+.prototype_bottom {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    padding: 19px 38px;
+    margin-top: 36px;
+    width: 172px;
+    height: 58px;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+    text-decoration: none;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #ffffff;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.prototype_bottom:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+/*SECTION PARTNERS*/
+
+.section_partners {
+    margin-bottom: 191px;
+}
+.partners_size {
+    width: 100%;
+    max-width: 1272px;
+
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.section_partners_text {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.section_partners_text h2 {
+    text-align: center;
+    margin-bottom: 27px;
+}
+.section_partners_text h3 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.section_partners_company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*GOOGLE BLOCK*/
+.google_block {
+    width: 100%;
+    max-width: 273px;
+    height: 100%;
+    max-height: 163px;
+
+    vertical-align: middle;
+
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+}
+.google_block span {
+    display: inline-block;
+    margin: 31px 89.5px 15px;
+
+}
+.partners_google {
+    display: inline-block;
+    text-align: center;
+    margin: 0 40px 31px;
+}
+
+/*AMAZON BLOCK*/
+.amazon_block {
+    width: 100%;
+    max-width: 273px;
+    max-height: 100%;
+    height: 160.14px ;
+
+    vertical-align: middle;
+
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+}
+.amazon_block span {
+    margin: 32px 89.5px 15px;
+    display: inline-block;
+}
+.partners_amazon {
+    display: inline-block;
+    text-align: center;
+    margin: 0 40px 32px;
+}
+
+/*MICROSOFT BLOCK*/
+.microsoft_block {
+    width: 100%;
+    max-width: 301.54px;
+    height: 100%;
+    max-height: 165px;
+
+    vertical-align: middle;
+
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+}
+.microsoft_block span {
+    display: inline-block;
+    margin: 25px 103.77px 15px;
+}
+.partners_microsoft {
+    display: inline-block;
+    text-align: center;
+    margin: 0 40px 25px;
+}
+
+/*UBER BLOCK*/
+.uber_block {
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 165px;
+
+    vertical-align: middle;
+
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+}
+.uber_block span {
+    display: inline-block;
+    margin: 25px 63px 15px;
+}
+.partners_uber {
+    display: inline-block;
+    text-align: center;
+    margin: 0 40px 25px;
+}
+
+/*DROPBOX BLOCK*/
+.dropbox_block {
+    width: 100%;
+    max-width: 309px;
+    height: 100%;
+    max-height: 164px;
+
+    vertical-align: middle;
+
+    border: 1px solid #D8D8D8;
+    background-color: #ffffff;
+}
+.dropbox_block span {
+    display: inline-block;
+    margin: 40px 107.5px 15px;
+}
+.partners_dropbox {
+    display: inline-block;
+    text-align: center;
+    margin: 0 40px 40px;
+}
+
+/*partners-bottom*/
+.partners_bottom_size {
+    margin-top: 80.5px;
+    display: flex;
+    justify-content: center;
+}
+.partners_bottom {
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 16px 59.5px;
+    width: 236px;
+    height: 60px;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #ffffff;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.partners_bottom:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+/*SECTION TESTIMONIALS*/
+
+.section_testimonials {
+    margin-bottom: 100px;
+}
+.testimonials_size {
+    width: 100%;
+    max-width: 1236px;
+}
+
+/*Testimonials_one*/
+.testimonials_one {
+    text-align: center;
+}
+.testimonials_one h2 {
+    margin-bottom: 90px;
+}
+.testimonials_one img {
+    margin-bottom: 60.6px;
+}
+.testimonials_one p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: .2px;
+    color: #374754;
+
+    margin-bottom: 62.5px;
+}
+
+/*testimonials-two*/
+.testimonials_two {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    margin-bottom: 82.5px;
+}
+.testimonials_two_img {
+    margin-right: 10px;
+}
+.testimonials_two address {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #374754;
+}
+.testimonials_address {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .2px;
+    color: #252B42;
+}
+
+/*testimonials-bottom*/
+.testimonials_bottom_size {
+    display: flex;
+    justify-content: center;
+}
+.testimonials_bottom {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 16px 47px;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #ffffff;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+
+    transition: background .1s linear, color .2s linear;
+}
+.testimonials_bottom:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/*SECTION PRICING*/
+
+.section_pricing {
+    padding-top: 110px;
+    background-color: #252B42;
+}
+.pricing_size {
+    width: 100%;
+    max-width: 1265px;
+}
+
+/*Pricing text*/
+.pricing_text {
+    text-align: center;
+}
+.pricing_text h2 {
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+.pricing_text p {
+    color: #ffffff;
+    margin-bottom: 90px;
+}
+
+/*pricing forms*/
+.pricing_forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-bottom: 100px;
+}
+
+/*COLUM 1 and 3 without pricing_colum_one_price_colum1_3*/
+.pricing_colum_one_three {
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+    max-height: 607px;
+
+
+    border: 1px solid #DEDEDE;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    padding: 40px;
+}
+
+/*first text in colum*/
+.pricing_colum_one_text h4 {
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
+}
+.pricing_colum_one_p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #374754;
+}
+
+/*PRICE in colum*/
+.pricing_colum_one_price {
+    display: flex;
+    align-items: start;
+
+    margin-top: 18.5px;
+}
+.pricing_colum_one_price_colum1 {
+    margin: 0 10px 28.5px 68px;
+}
+.pricing_zero {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 84px;
+    letter-spacing: .2px;
+    color: #252B42;
+}
+.pricing_colum_one_price_colum2{
+    text-align: left;
+
+    padding-top: 12px;
+}
+.pricing_dollar {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
+}
+.pricing_month {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #374754;
+}
+
+/*another text in colum*/
+.pricing_colum_one_feature {
+    margin: 0 40px 40px 40px;
+}
+.pricing_feature {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .2px;
+    color: #252b42;
+
+    margin-bottom: 20px;
+}
+
+/*bottom in colum*/
+.pricing_bottom {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 18px 75.5px;
+    width: 255px;
+    height: 56px;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #ffffff;
+
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+    background-color: #2091F9;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.pricing_bottom:hover {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/*+ for 3 colum*/
+.pricing_colum_one_price_colum1_3 {
+    margin: 0 10px 28.5px 48px;
+}
+
+/*2 COLUM*/
+
+.pricing_colum_two{
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+    max-height: 693px;
+
+
+    border: 1px solid #DEDEDE;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+
+    background-color: #2091F9;
+
+    padding: 83px 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*first text in colum*/
+.pricing_colum_two_text h4 {
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #ffffff;
+
+}
+.pricing_colum_two_p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #ffffff;
+}
+
+/*PRICE in colum*/
+.pricing_colum_two_price {
+    display: flex;
+    align-items: start;
+
+    margin-top: 18.5px;
+}
+.pricing_colum_two_price_colum1 {
+    margin: 0 10px 28.5px 48px;
+}
+.pricing_ten {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 84px;
+    letter-spacing: .2px;
+    color: #ffffff;
+}
+.pricing_colum_two_price_colum2{
+    text-align: left;
+
+    padding-top: 12px;
+}
+.pricing_dollar2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #ffffff;
+}
+.pricing_month2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #ffffff;
+}
+
+/*another text in colum*/
+.pricing_colum_two_feature {
+    margin: 0 40px 40px 40px;
+}
+.pricing_feature_2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .2px;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+/*bottom in colum*/
+.pricing_bottom_2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 18px 75.5px;
+    width: 255px;
+    height: 56px;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #2091F9;
+
+    border: 2px solid #ffffff;
+    border-radius: 35px;
+    background-color: #ffffff;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: background 0.1s linear, color 0.2s linear;
+}
+.pricing_bottom_2:hover {
+    color: #333333;
+    background-color: #2091F9;
+}
+
+/*SECTION CONTACT*/
+
+.section_contact {
+    margin-top: 213px;
+    margin-bottom: 102px;
+}
+.contact_size {
+    width: 100%;
+    max-height: 1275px;
+}
+
+/*contact text*/
+.contact_text {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.contact_text_h2 {
+    margin-bottom: 27px;
+}
+
+/*contact  location*/
+.contact_location {
+    display: flex;
+    margin-top: 60px;
+}
+
+/*contact_us*/
+.contact_location_contact_us {
+    padding: 52px 50px;
+
+    width: 453px;
+    height: 669px;
+
+    background-color: #ffffff;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+}
+.contact_location_contact_us h5 {
+    text-align: center;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252b42;
+
+    margin-bottom: 45px;
+}
+.contact_us_input1 {
+    background-color: #f5f5f5;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+
+    width: 353px;
+    height: 54px;
+
+    margin-bottom: 45px;
+    padding: 19px 20px;
+
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: .1px;
+    color: #18171D;
+}
+.contact_us_input2 {
+    background-color: #f5f5f5;
+    border: 1px solid #E8E8E8;
+
+    width: 353px;
+    height: 193px;
+
+    margin-bottom: 45px;
+
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: .1px;
+    color: #18171D;
+
+}
+.contact_us_input2[value] {
+    padding: 23px 236px 154px 20px;
+}
+.contact_us_bottom {
+    padding: 18px 48px;
+
+    background-color: #2091F9;
+    border: 2px solid #2091F9;
+    border-radius: 35px;
+
+    width: 145px;
+    height: 56px;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: #ffffff;
+
+    text-decoration: none;
+}
+.contact_us_bottom:hover {
+    color: #333333;
+    background-color: #ffffff ;
+}
+
+/*contact location info*/
+.contact_location_info {
+    margin-left: 64px;
+}
+/*contact location info cont*/
+.contact_location_info_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.contact_location_info_cont_colum  {
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+.contact_location_info_cont_colum p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: .1px;
+    color: #374754;
+
+    margin-top: 20.5px;
+}
+.colum_size_between {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.contact_location_info_cont_img {
+    /*display: inline-block;
+    text-align: center;  Не центрує*/
+    margin-left: 94.5px;
+    margin-bottom: 74.5px;
+}
+.contact_location_info_badges {
+    display: flex;
+}
+.contact_location_info_facebook {
+    margin-left: 32.5px;
+    margin-right: 33px;
+}
+
+/*FOOTER*/
+.section_footer {
+    padding-top: 154px;
+    padding-bottom: 150px;
+
+    background-color: #252b42;
+}
+.footer_size {
+    display: flex;
+
+    max-width: 100%;
+    width: 1321px;
+
+}
+
+/*footer text*/
+.footer_text {
+    display: flex;
+}
+.footer_text li {
+    list-style-type: none;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .2px;
+    color: #ffffff;
+}
+.footer_text_colum1 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.footer_text_colum1 a:hover {
+    color: #fce38a;
+}
+.footer_text_li {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 28px;
+    letter-spacing: .1px !important;
+    color: #ffffff;
+}
+/*footer colum 1*/
+.footer_text_colum1 {
+    text-align: left;
+
+    margin-right: 132px;
+}
+/*footer colum 2*/
+.footer_text_colum2 {
+    text-align: left;
+
+    margin-right: 132px;
+}
+/*footer colum 3*/
+.footer_text_colum3 {
+    text-align: left;
+
+    margin-right: 96px;
+}
+
+/*footer contact*/
+.footer_contact {
+    margin-left: 191.5px;
+}
+/*footer-contact-location*/
+.footer_contact_location {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 21.5px;
+    margin-left: 0;
+}
+.footer_contact_location img {
+    margin-right: 3px;
+}
+.footer_contact_location p {
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: .2px;
+    color: #ffffff;
+}
+/*footer-contact-phone*/
+.footer_contact_phone {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 44.5px;
+    margin-left: 7px;
+
+}
+.footer_contact_phone img {
+    margin-right: 17px;
+}
+.footer_contact_phone p {
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: .2px;
+    color: #ffffff;
+}
+
+/*footer-contact-badges*/
+
+.footer_contact_badges {
+    display: flex;
+
+    text-align: left;
+
+}
+.footer_contact_twitter {
+    margin-right: 32.5px;
+}
+.footer_contact_facebook {
+    margin-right: 33px;
+}
