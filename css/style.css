@@ -78,7 +78,7 @@ body {
 /*  Container*/
 .container {
     width: 100%;
-    max-width: 1304px;
+    max-width: 1320px; /*з посилання взяв ширину*/
     margin: 0 auto;
 }
 
@@ -87,11 +87,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100% ;
-    height: 100vh ;
-    background-image: url("icon/intro.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .intro_inner {
     width: 100%;
@@ -146,12 +141,13 @@ body {
 
 /* CSS for Header */
 .header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
+
+    width: 100% ;
+    height: 100vh;
+    background-image: url("icon/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 930px; /*02 09*/
+    /*background-size: cover;*/
 }
 
 /*Flex container header in*/
@@ -159,6 +155,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 182px;
 }
 /* navigation */
 nav a {
@@ -189,8 +186,10 @@ nav a {
 
 /* Header icons*/
 .header_icon {
-    display: inline-block;
+    display: flex;
 }
+/*02.09  1 question*/
+
 .icon_messengers {
     margin-right: 32px;
 }
@@ -222,7 +221,7 @@ nav a {
     justify-content: center;
 
     width: 100%;
-    max-width: 1300px; /* Я виміряв для цього контейнера ширину 845рх але коли її виставляю то колони в мене не центровані, не зміг вирішити цю проблему
+    max-width: 100%; /* Я виміряв для цього контейнера ширину 845рх але коли її виставляю то колони в мене не центровані, не зміг вирішити цю проблему
    по іншому, як збільшити ширину (але я вважаю, що це не правильно)*/
 
 }
@@ -276,8 +275,10 @@ nav a {
     margin: 0 auto;
     width: 100%;
 }
-.bottom_play {  /*Не знаю як зробит, щоб фото (play) не сгибало властивістью border-radius, щоб плей
-був рівним*/
+
+/*02.09*/
+.circle {
+    z-index: 1;
     position: absolute;
 
     width: 187.4px;
@@ -286,6 +287,24 @@ nav a {
     border: 2px solid #2091F9;
     border-radius: 50%;
     background-color: #2091F9;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.bottom_play {  /*Не знаю як зробит, щоб фото (play) не сгибало властивістью border-radius, щоб плей
+був рівним*/
+    position: absolute;
+
+    /*width: 187.4px;*/
+    /*height: 187.4px;*/
+
+    /*border: 2px solid #2091F9;*/
+    /*border-radius: 50%;*/
+    /*background-color: #2091F9;*/
 
     top: 50%;
     left: 50%;
@@ -1138,8 +1157,6 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 .contact_location_info_cont_colum  {
     text-align: center;

@@ -9,6 +9,7 @@
 <body>
    <header class="header">
        <div class="container">
+
            <div class="header_in">
                <nav>
                    <a class="nav_link" href="#home"> Home </a>
@@ -20,34 +21,38 @@
                        <img src="css/image/log.svg" alt="logotype site">
                    </a>
                </nav>
-
+<!--               07.09-->
                <div class="header_icon">
-                   <a href="#">
-                       <img class="icon_messengers" src="css/icon/twit.svg" alt="logotype twitter">
-                   </a>
-                   <a href="#">
-                       <img class="icon_messengers" src="css/icon/facebook.svg" alt="logotype facebook">
-                   </a>
-                   <a href="#">
-                       <img class="icon_messengers" src="css/icon/in.svg" alt="logotype in">
-                   </a>
+                   <div>
+                       <a href="#">
+                           <img class="icon_messengers" src="css/icon/twit.svg" alt="logotype twitter">
+                       </a>
+                   </div>
+                   <div>
+                       <a href="#">
+                           <img class="icon_messengers" src="css/icon/facebook.svg" alt="logotype facebook">
+                       </a>
+                   </div>
+                   <div>
+                       <a href="#">
+                           <img class="icon_messengers" src="css/icon/in.svg" alt="logotype in">
+                       </a>
+                   </div>
                </div>
 
+           </div>
+
+           <div id="home" class="intro">
+                   <div class="intro_inner">
+                       <h1 class="intro_title">The best products start with Figma </h1>
+                       <h2 class="intro_undertitle">Most calendars are designed for teams. Slate is designed for freelancers</h2>
+                       <a class="bottom_intro" href="#">Try For Free</a>
+                   </div>
            </div>
        </div>
    </header>
 
    <main>
-
-       <section id="home" class="intro">
-           <div class=" container">
-               <div class="intro_inner">
-                   <h1 class="intro_title">The best products start with Figma </h1>
-                   <h2 class="intro_undertitle">Most calendars are designed for teams. Slate is designed for freelancers</h2>
-                   <a class="bottom_intro" href="#">Try For Free</a>
-               </div>
-           </div>
-       </section>
 
        <section id="product" class="section_features">
            <div class="container">
@@ -99,7 +104,13 @@
                <div class="features_video">
                    <div class="video_size">
                        <img class="video_screen" src="css/image/sreen.svg" alt="Girls and window">
-                       <img class="bottom_play" src="css/image/play.svg" alt="Icon play">
+                       <div class="circle">
+                           <input class="bottom_play" type="image" src="css/image/play.svg">
+                       </div>
+<!--                       <input class="bottom_play" type="image" src="css/image/play.svg">-->
+                       <!--                       <button class="bottom_play" type="button" name="play">-->
+<!--                           <img class="bottom_play" src="css/image/play.svg" alt="Icon play">-->
+<!--                       </button>-->
                    </div>
                </div>
 
@@ -133,7 +144,7 @@
                        <h2>Lightning fast prototyping</h2>
                        <label for="email"><strong class="label_sub"> Subscribe to our Newsletter </strong>
                        <br>Available exclusively on Figmaland </label>
-                       <input type="text" id="email" required minlength="10" maxlength="30" value="Your Email">
+                       <input type="text" id="email" required minlength="10" maxlength="30" placeholder="Your Email">
                        <a class="prototype_bottom" href="#">Subscribe</a>
                    </div>
                </div>
@@ -380,7 +391,12 @@
                                    <p class="contact_location_p">willie.jennings@example.com</p>
                                </div>
                            </div>
-                           <img class="contact_location_info_cont_img" src="css/image/contact_us/4.png" alt="map">
+
+                           <iframe class="contact_location_info_cont_img"
+                                   src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6307.187705630806!2d-122.42086176190189!3d37.77612041402483!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1662546322041!5m2!1sen!2sua"
+                                   width="516" height="323.19" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                           </iframe>
+
                            <div class="contact_location_info_badges">
                                <div>
                                    <a href="#">
