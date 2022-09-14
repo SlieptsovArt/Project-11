@@ -82,6 +82,14 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 418px) {
+    .container {
+        width: 100%;
+        max-width: 386px;
+        margin: 0 auto;
+    }
+}
+
 /* First block intro*/
 .intro {
     display: flex;
@@ -143,11 +151,17 @@ body {
 .header {
 
     width: 100% ;
-    height: 100vh;
+    height: 60vh;
     background-image: url("icon/intro.jpg");
     background-repeat: no-repeat;
     background-size: 100% 930px; /*02 09*/
     /*background-size: cover;*/
+}
+
+@media (max-width: 418px) {
+    .header {
+        background-size: 100% 845px;
+    }
 }
 
 /*Flex container header in*/
@@ -157,11 +171,24 @@ body {
     align-items: center;
     margin-bottom: 182px;
 }
+@media (max-width: 418px) {
+    .header_in {
+        margin-bottom: 117px;
+    }
+}
+
 /* navigation */
-nav a {
+.header_in nav a {
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
+}
+@media (max-width:418px) {
+    .header_in nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .nav_link {
     display: inline-block;
@@ -171,6 +198,11 @@ nav a {
     color: #fff;
     transition: color 0.2s linear; /* Для більш плавного переходу кольору коли наводиш курсор*/
     text-decoration: none;
+}
+@media (max-width: 418px) {
+    .nav_link {
+        display:none;
+    }
 }
 .nav_link:hover {
     color: #fce38a;
@@ -183,10 +215,49 @@ nav a {
     margin: 53px 43px; /*53 (1)*/
     margin-left: 0;
 }
+@media (max-width: 418px) {
+    .figma_land {
+        display: inline-block;
+        margin: 31px 0 0 25px
+    }
+}
+/*menu*/
+.menu__btn {
+    display: none;
+}
+@media (max-width: 418px) {
+    .menu__btn {
+        display: inline-block;
+        width: 26.67px;
+        height: 16px;
 
+        margin: 52px 22.66px auto 120px;
+
+        position: relative;
+        border: medium none;
+        background-image: none;
+        background: content-box;
+        float: left;
+        /*background-color: rgba(28,28,28,0).*/
+    }
+    .menu__btn:after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+
+        box-shadow: 0 6.5px 0 0 #ffffff, 0 13px 0 0 #ffffff; /*ЯК ЗРОБИТИ НАСТУПНІ ТІНІ МЕНШИМИ ??*/
+    }
+}
 /* Header icons*/
 .header_icon {
     display: flex;
+}
+@media (max-width: 418px) {
+    .header_icon {
+        display: none;
+    }
 }
 /*02.09  1 question*/
 
