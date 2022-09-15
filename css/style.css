@@ -70,74 +70,9 @@ body {
     line-height: 1.6;
     border: 0;
 }
-/*  Container*/
-.container {
-    width: 100%;
-    max-width: 386px;
-    margin: 0 auto;
-}
-@media (max-width: 992px) {
-    .container {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-}
-@media (max-width: 1400px) {
-    .container {
-        width: 100%;
-        max-width: 1320px; /*з посилання взяв ширину*/
-        margin: 0 auto;
-    }
-}
-
-/* First block intro*/
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.intro_inner {
-    width: 100%;
-    max-width: 766px;
-    margin: 0 auto;
-    text-align: center;
-}
-.intro_title {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 74px;
-    font-weight: 700;
-    line-height: 84px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-}
-@media (max-width: 418px) {
-    .intro_title {
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 55px;
-    }
-}
-.intro_undertitle {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    margin-top: 27px;
-}
-@media (max-width: 418px) {
-    .intro_undertitle span{
-        display: none;
-    }
-}
-
-/*bottom INTRRO*/
-.bottom_intro {
+.button {
     display: inline-block;
     vertical-align: top;
-    padding: 16px 62px;
 
     border: 2px solid #2091F9;
     border-radius: 35px;
@@ -151,134 +86,259 @@ body {
     color: #ffffff;
 
     text-decoration: none;
-    margin-top: 60px;
-
     transition: background 0.1s linear, color 0.2s linear;
 }
-.bottom_intro:hover {
+.button:hover {
     background-color: #ffffff;
     color: #333333;
 }
 
-/* CSS for Header */
-.header {
-
-    width: 100% ;
-    height: 60vh;
-    background-image: url("icon/intro.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 930px; /*02 09*/
-    /*background-size: cover;*/
+.title {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
 }
-
-@media (max-width: 418px) {
-    .header {
-        width: 100% ;
-        height: 73vh;
-        background-size: 100% 845px;
+@media (min-width: 992px)   {
+    .title {
+        font-size: 61px;
+        font-weight: 700;
+        line-height: 71px;
+    }
+}
+@media (min-width: 1400px)   {
+    .title {
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 84px;
     }
 }
 
-/*Flex container header in*/
-.header_in {
+.undertitle {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+/*  Container*/
+.container {
+    width: 100%;
+    max-width: 386px;
+    margin: 0 auto;
+}
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 100%;
+        max-width: 1320px; /*з посилання взяв ширину*/
+        margin: 0 auto;
+    }
+}
+
+/*SECTION HEADER*/
+
+.header {
+    width: 100% ;
+    height: 73vh;
+    background-image: url("icon/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 845px;
+}
+@media (min-width: 992px)   {
+    .header {
+        width: 100% ;
+        height: 65vh;
+        background-size: 100% 870px;
+    }
+}
+@media (min-width: 1400px)   {
+    .header {
+        width: 100% ;
+        height: 60vh;
+        background-size: 100% 930px;
+    }
+}
+
+/*header__in*/
+.header__in {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 182px;
+    margin-bottom: 117px;
 }
-@media (max-width: 418px) {
-    .header_in {
-        margin-bottom: 117px;
+@media (min-width: 992px)   {
+    .header__in {
+        margin-bottom: 150px;
+    }
+}
+@media (min-width: 1400px)   {
+    .header__in {
+        margin-bottom: 182px;
     }
 }
 
-/* navigation */
-.header_in nav a {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+/*MENU*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-@media (max-width:418px) {
-    .header_in nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.menu__link {
+    display: none;
+}
+@media (min-width: 992px)   {
+    .menu__link {
+        display: inline-block;
+
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+
+        vertical-align: top;
+        margin: 67.5px 43px;
+        margin-left: 0;
+        color: #fff;
+        transition: color 0.2s linear; /* Для більш плавного переходу кольору коли наводиш курсор*/
+        text-decoration: none;
+    }
+    .menu__link:hover {
+        color: #fce38a;
     }
 }
-.nav_link {
+@media (min-width: 1400px)   {
+    .menu__link {
+        display: inline-block;
+
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+
+        vertical-align: top;
+        margin: 67.5px 43px;
+        margin-left: 0;
+        color: #fff;
+        transition: color 0.2s linear; /* Для більш плавного переходу кольору коли наводиш курсор*/
+        text-decoration: none;
+    }
+    .menu__link:hover {
+        color: #fce38a;
+    }
+}
+
+.menu__logotype {
     display: inline-block;
     vertical-align: top;
-    margin: 67.5px 43px;
-    margin-left: 0;
-    color: #fff;
-    transition: color 0.2s linear; /* Для більш плавного переходу кольору коли наводиш курсор*/
-    text-decoration: none;
+    margin: 31px 0 0 25px
 }
-@media (max-width: 418px) {
-    .nav_link {
+@media (min-width: 992px) {
+    .menu__logotype {
+        margin: 53px 43px;
+        margin-left: 0;
+    }
+}
+@media (min-width: 1400px) {
+    .menu__logotype {
+
+    }
+}
+
+.menu__btn {
+    display: inline-block;
+    width: 26.67px;
+    height: 16px;
+
+    margin: 52px 22.66px auto 120px;
+
+    position: relative;
+    border: medium none;
+    background-image: none;
+    background: content-box;
+    float: left;
+}
+.menu__btn:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+
+    box-shadow: 0 6.5px 0 0 #ffffff, 0 13px 0 0 #ffffff; /*ЯК ЗРОБИТИ НАСТУПНІ ТІНІ МЕНШИМИ ??*/
+}
+@media (min-width: 992px) {
+    .menu__btn {
         display:none;
     }
 }
-.nav_link:hover {
-    color: #fce38a;
-}
 
-/*Logotype*/
-.figma_land {
-    display: inline-block;
-    vertical-align: top;
-    margin: 53px 43px; /*53 (1)*/
-    margin-left: 0;
-}
-@media (max-width: 418px) {
-    .figma_land {
-        display: inline-block;
-        margin: 31px 0 0 25px
-    }
-}
-/*menu*/
-.menu__btn {
+/*header__icon*/
+
+.header__icon {
     display: none;
 }
-@media (max-width: 418px) {
-    .menu__btn {
-        display: inline-block;
-        width: 26.67px;
-        height: 16px;
-
-        margin: 52px 22.66px auto 120px;
-
-        position: relative;
-        border: medium none;
-        background-image: none;
-        background: content-box;
-        float: left;
-        /*background-color: rgba(28,28,28,0).*/
-    }
-    .menu__btn:after {
-        content: "";
-        width: 100%;
-        height: 3px;
-        background-color: #ffffff;
-        position: absolute;
-
-        box-shadow: 0 6.5px 0 0 #ffffff, 0 13px 0 0 #ffffff; /*ЯК ЗРОБИТИ НАСТУПНІ ТІНІ МЕНШИМИ ??*/
+@media (min-width: 992px)  {
+    .header__icon {
+        display: flex;
     }
 }
-/* Header icons*/
-.header_icon {
+
+/*icons__item*/
+@media (min-width: 992px)  {
+    .icons__item {
+        margin-right: 32px;
+    }
+}
+
+/*header__intro*/
+
+.header__intro {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-@media (max-width: 418px) {
-    .header_icon {
-        display: none;
+.intro {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__title {
+    margin-bottom: 27px;
+}
+.intro__undertitle {
+    margin-bottom: 69px;
+}
+@media (min-width: 992px) {
+    .intro__undertitle {
+        margin-bottom: 84px;
     }
 }
-/*02.09  1 question*/
-
-.icon_messengers {
-    margin-right: 32px;
+@media (min-width: 1400px) {
+    .intro__undertitle {
+        margin-bottom: 90px;
+    }
 }
+.intro_undertitle span {
+    display: block;
+}
+.intro__btn {
+    padding: 16px 62px;
+}
+
+
+/*SECTION FEATURES*/
+
+
+
 
 /*SECTION FEATURES*/
 
