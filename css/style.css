@@ -35,7 +35,6 @@ dd {
 Як зробити, щоб і залишити цей код і вони після розміщались горизонтально?*/
 
 /*Загальні налаштування*/
-
 h2 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -45,7 +44,6 @@ h2 {
     letter-spacing: 0.2px;
     color: #252B42;
 }
-
 h3 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -55,18 +53,16 @@ h3 {
     letter-spacing: 0.2px;
     color: #374754;
 }
+/*span {*/
+/*    font-family: 'Fira Sans', sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 16px;*/
+/*    line-height: 23px;*/
+/*    letter-spacing: .1px;*/
+/*    color: #374754;*/
 
-span {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: .1px;
-    color: #374754;
-
-    text-align: center;
-}
-
+/*    text-align: center;*/
+/*}*/
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
@@ -74,18 +70,23 @@ body {
     line-height: 1.6;
     border: 0;
 }
-
 /*  Container*/
 .container {
     width: 100%;
-    max-width: 1320px; /*з посилання взяв ширину*/
+    max-width: 386px;
     margin: 0 auto;
 }
-
-@media (max-width: 418px) {
+@media (max-width: 992px) {
     .container {
         width: 100%;
-        max-width: 386px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1400px) {
+    .container {
+        width: 100%;
+        max-width: 1320px; /*з посилання взяв ширину*/
         margin: 0 auto;
     }
 }
