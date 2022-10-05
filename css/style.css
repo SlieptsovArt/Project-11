@@ -155,14 +155,14 @@ body {
     background-image: url("icon/intro.jpg");
     background-repeat: no-repeat;
     background-size: 100% 845px; /*845px*/
-    margin-bottom: 67px;
+    margin-bottom: 19px;
 }
 @media (min-width: 992px)   {
     .header {
         width: 100% ;
         /*height: 85vh;*/
         background-size: 100% 100%;
-        margin-bottom: 88px;
+        margin-bottom: 65px;
     }
 }
 @media (min-width: 1400px)   {
@@ -170,7 +170,7 @@ body {
         width: 100% ;
         /*height: 89vh;*/
         background-size: 100% 100% ;  /*930px;*/
-        margin-bottom: 109px;
+        margin-bottom: 115px;
     }
 }
 
@@ -395,8 +395,24 @@ body {
 
 /*SECTION FEATURES*/
 
+.section_features {
+    padding-top: 91px;
+    padding-bottom: 98px
+}
+@media (min-width: 992px) {
+    .section_features {
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+}
+@media (min-width: 1400px) {
+    .section_features {
+        padding-top: 11px;
+        padding-bottom: 52px;
+    }
+}
 
-
+/*Замінити БЕМ МЕТОДОЛОГІЮ features */
 
 /*SECTION FEATURES*/
 
