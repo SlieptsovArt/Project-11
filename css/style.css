@@ -101,20 +101,6 @@ body {
     letter-spacing: 0.2px;
     color: #ffffff;
 }
-@media (min-width: 992px)   {
-    .title {
-        font-size: 61px;
-        font-weight: 700;
-        line-height: 71px;
-    }
-}
-@media (min-width: 1400px)   {
-    .title {
-        font-size: 74px;
-        font-weight: 700;
-        line-height: 84px;
-    }
-}
 
 .undertitle {
     font-family: 'Fira Sans', sans-serif;
@@ -338,12 +324,20 @@ body {
     .intro__title {
         width: 100%;
         max-width: 486px;
+
+        font-size: 61px;
+        font-weight: 700;
+        line-height: 71px;
     }
 }
 @media (min-width: 1400px) {
     .intro__title {
         width: 100%;
         max-width: 660px;
+
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 84px;
     }
 }
 
@@ -408,7 +402,7 @@ body {
 @media (min-width: 1400px) {
     .features {
         padding-top: 11px;
-        padding-bottom: 52px;
+        padding-bottom: 12px; /*52*/
     }
 }
 
@@ -646,12 +640,12 @@ I'm started 12.10*/
         text-align: center;
 
         display: inline-block;
-        padding: 35px 0;
+        /*padding: 35px 0;*/
     }
 }
 @media (min-width: 1400px) {
     .features__videodesktop {
-        padding: 52px  0;
+        /*padding: 52px  0;*/
     }
 }
 
@@ -697,58 +691,144 @@ I'm started 12.10*/
     }
 }
 
+/*SECTION   WAY   */
 
-/*SECTION WAY*/
-
-.section_way {
-    margin-top: 275px;
-    margin-bottom: 442px;
+.way {
+    padding: 30px 20px;
 }
-.way_size {
+@media (min-width: 992px)   {
+    .way {
+        padding: 150px 61px;
+    }
+}
+@media (min-width: 1400px) {
+    .way {
+        padding: 226px 82px;
+    }
+}
+
+.way__size {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+
+    padding: 50px 0;
 
     width: 100%;
-    max-width: 1225px;
 }
-/*Way text*/
-.section_way_text {
-    text-align: left;
+@media (min-width: 992px)   {
+    .way__size {
+        flex-direction: row;
+        padding: 31px 0;
+    }
 }
-.section_way_text h2 {
-    text-align: left;
+@media (min-width: 1400px) {
+    .way__size {
+        padding: 43px 0;
+    }
 }
-.section_way_text h3 {
-    margin-top: 27px;
-    margin-bottom: 70px;
+/*way__text*/
+.way__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 
-    text-align: left;
+    margin-bottom: 59px;
 }
-.bottom_way {
+@media (min-width: 992px)   {
+    .way__text {
+        margin-bottom: 0;
+        margin-right: 50px;
+        align-items: normal;
+    }
+}
+
+.way__title {
+    padding: 10px 10px;
+    color: #252B42;
+
+    width: 355px;
+    margin-bottom: 7px;
+}
+@media (min-width: 992px)   {
+    .way__title {
+        padding: 10px 0;
+
+        width: 335px;
+        text-align: left;
+    }
+}
+
+.way__undertitle {
+    padding: 10px 10px;
+    color: #374754;
+
+    width: 285px;
+    margin-bottom: 60px;
+}
+@media (min-width: 992px)   {
+    .way__undertitle {
+        padding: 10px 0;
+
+        width: 510px;
+        text-align: left;
+    }
+}
+@media (min-width: 1400px) {
+    .way__undertitle  {
+        width: 532px;
+    }
+}
+
+.way__undertitle-span {
+    display: none;
+}
+@media (min-width: 992px)   {
+    .way__undertitle-span {
+        display: inline-block;
+    }
+}
+
+.way__button {
     display: inline-block;
-    vertical-align: top;
+
+    width: 236px;
+    height: 60px;
+
     padding: 16px 59.5px;
-
-    border: 2px solid #2091F9;
-    border-radius: 35px;
-    background-color: #2091F9;
-
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    color: #ffffff;
-
-    text-decoration: none;
-
-    transition: background 0.1s linear, color 0.2s linear;
 }
-.bottom_way:hover {
-    background-color: #ffffff;
-    color: #333333;
+@media (min-width: 992px)   {
+    .way__button {
+        text-align: left;
+    }
 }
+
+/*way__picture */
+@media (min-width: 992px)   {
+    .way__picture {
+        padding: 8px 8px;
+    }
+}
+
+@media (min-width: 992px)   {
+    .picture__mobile  {
+        display: none;
+    }
+}
+.picture__desktop {
+    display: none;
+}
+@media (min-width: 992px)   {
+    .picture__desktop {
+        display: inline-block;
+    }
+}
+/*END 14.10 18:42*/
+
+
 
 /*SECTION PROTOTYPE */
 
