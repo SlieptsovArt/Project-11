@@ -634,62 +634,67 @@ I'm started 12.10*/
     color: #374754;
 }
 
-
-/*features video */
-.features_video {
-    margin-top: 66px;
+/*features__videodesktop*/
+.features__videodesktop {
+    display:none;
 }
-.video_size {
-    position: relative;
+@media (min-width: 992px) {
+    .features__videodesktop {
+        position: relative;
 
-    width:100%;
-    max-width: 1320px;
-    text-align: center;
+        width: 100%;
+        text-align: center;
+
+        display: inline-block;
+        padding: 35px 0;
+    }
 }
-.video_screen {
-    filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
-    border-radius: 44.8123px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/*02.09*/
-.circle {
-    z-index: 1;
-    position: absolute;
-
-    width: 187.4px;
-    height: 187.4px;
-
-    border: 2px solid #2091F9;
-    border-radius: 50%;
-    background-color: #2091F9;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+@media (min-width: 1400px) {
+    .features__videodesktop {
+        padding: 52px  0;
+    }
 }
 
+@media (min-width: 992px) {
+    .videodesktop__screen {
+        filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+        border-radius: 44.8123px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
 
-.bottom_play {  /*Не знаю як зробит, щоб фото (play) не сгибало властивістью border-radius, щоб плей
-був рівним*/
-    position: absolute;
+@media (min-width: 992px) {
+    .videodesktop__circle {
+        z-index: 1;
+        position: absolute;
 
-    /*width: 187.4px;*/
-    /*height: 187.4px;*/
+        width: 187.4px;
+        height: 187.4px;
 
-    /*border: 2px solid #2091F9;*/
-    /*border-radius: 50%;*/
-    /*background-color: #2091F9;*/
+        border: 2px solid #2091F9;
+        border-radius: 50%;
+        background-color: #2091F9;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+}
 
-    margin: 0 auto;
-    padding: 71.3px 69.09px 69.26px 79.27px;
+@media (min-width: 992px) {
+    .videodesktop__play {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+        margin: 0 auto;
+        padding: 71.3px 69.09px 69.26px 79.27px;
+    }
 }
 
 
