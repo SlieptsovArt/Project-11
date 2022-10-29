@@ -846,9 +846,113 @@ I'm started 12.10*/
     }
 }
 
+/*newsletter__text-mob */
+.newsletter__text-mob {
+    margin-bottom: 59px;
+    text-align: center;
+}
+.newsletter__heading-mob {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
 
+    margin-bottom: 7px;
+}
+.newsletter__title-mob {
+    color: #252B42;
+    padding: 10px 10px;
+    margin-bottom: 7px;
+}
+.newsletter__undertitle-mob {
+    color: #374754;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 425px;
+}
 
+/*newsletter__photo-mob */
+.newsletter__photo-mob {
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 59px;
+}
+.newsletter__picture-mob {
+    width: 100%;
+    max-width: 425px;
+}
+
+/*newsletter__feedback-mob*/
+.newsletter__feedback-mob {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter__subscribe-mob {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: .1px;
+    color: #252B42;
+
+    width: 100%;
+    max-width: 276px;
+
+    margin: 0 auto 10px;
+}
+.newsletter__available-mob {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .2px;
+    color: #374754;
+    text-align: center;
+
+    width: 100%;
+    max-width: 301px;
+
+    margin: 0 auto 34px;
+}
+.newsletter__email-mob {
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .1px;
+    color: #18171D;
+
+    padding: 19px 35px;
+    margin: 0 auto 12px;
+
+    background: #F4F4F4;
+    border: 1px solid #E8E8E8;
+    border-radius:  39px;
+}
+.newsletter__button-mob {
+    padding: 17px 128.5px;
+}
+
+/*newsletter__content-desktop*/
+.newsletter__content-desktop {
+    display: none;
+}
+@media (min-width: 992px)   {
+    .newsletter__content-desktop {
+
+    }
+}
+@media (min-width: 1400px) {
+    .newsletter__content-desktop {
+        
+    }
+}
 /*SECTION PROTOTYPE */
+
 
 .section_prototype {
     margin-bottom: 182px;
