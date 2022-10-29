@@ -829,11 +829,22 @@ I'm started 12.10*/
 }
 /*END 14.10 18:42*/
 
-/*SECTION  PROTOTYPE*/
+/*SECTION  NEWSLETTER*/
 /*29.10*/
+.newsletter {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
-
-
+/*newsletter-content-mob*/
+.newsletter__content-mob {
+    padding-bottom: 34px;
+}
+@media (min-width: 992px)   {
+    .newsletter__content-mob {
+        display: none;
+    }
+}
 
 
 
